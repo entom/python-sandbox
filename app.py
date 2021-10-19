@@ -11,7 +11,7 @@ print(msg.capitalize())
 print(msg.upper())
 arr = msg.split()
 arrLength = len(arr)
-print("Array lenth: " + str(arrLength))
+print("Array length: " + str(arrLength))
 
 if 5 > 1:
     print('5 > 1 - ok')
@@ -49,11 +49,11 @@ example
 
 stringExample = "example string"
 print(stringExample[0])
-if ("ex" in stringExample):
+if "ex" in stringExample:
     print("'ex' is in stringExample value")
-if ("ex string" in stringExample):
+if "ex string" in stringExample:
     print("'ex string' is in stringExample value")
-if ("ex string" not in stringExample):
+if "ex string" not in stringExample:
     print("'ex string' is not in stringExample value")
 
 print("part of string 2-5: " + stringExample[2:5])
@@ -101,5 +101,26 @@ numbers.pop(len(numbers) - 1)
 print(numbers)
 numbers.pop()
 print(numbers)
+
+newNumbers = [x for x in numbers if x < 5]
+print('newNumbers', newNumbers)
+
 numbers.clear()
 print(numbers)
+
+colors = ["yellow", "red", "green", "orange", "blue", "black"]
+print('colors', colors)
+colors.reverse()
+colorCopy = colors.copy()
+colorCopySecond = list(colors)
+print('colors - reverse', colors)
+colors.sort()
+print('colors', colors)
+colors.sort(reverse=True)
+print('colors', colors)
+print('colors-copy-1', colorCopy)
+print('colors-copy-2', colorCopySecond)
+colorSum = colorCopy + colors
+print('color-sum', colorSum)
+colorCopy.extend(colorCopySecond)
+print('colorCopy - extend with second list', colorCopy)
