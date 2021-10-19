@@ -1,7 +1,9 @@
 import random
 
+
 def myFunc(name):
     print("Hello!" + name + "!")
+
 
 msg = "Hello World"
 print(msg)
@@ -12,7 +14,7 @@ arrLength = len(arr)
 print("Array lenth: " + str(arrLength))
 
 if 5 > 1:
-    print('5 > 1 - ok')    
+    print('5 > 1 - ok')
 
 myFunc("Tom")
 myFunc("Carl")
@@ -21,7 +23,7 @@ myFunc("John")
 print(type(5.1))
 print(type(5))
 print(type("5"))
-print(5>2)
+print(5 > 2)
 
 listing = ["apple", "banana", "cherry"]
 print(listing)
@@ -76,7 +78,7 @@ print(numbers[8:])
 print(numbers[:3])
 print("5" in numbers)
 print("15" not in numbers)
-print("19"  in numbers)
+print("19" in numbers)
 print(numbers)
 numbers[1] = numbers[2]
 print(numbers)
