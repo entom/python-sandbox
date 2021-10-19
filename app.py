@@ -60,6 +60,16 @@ print("part of string from end: " + stringExample[5:])
 print("replace example: " + stringExample.replace("example", "Hello"))
 
 numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+for n in numbers:
+    print("number: " + str(n))
+for i in range(len(numbers)):
+    print("number: " + str(numbers[i]))
+
+j = 0
+while j < len(numbers):
+    print("while - number: " + str(numbers[j]))
+    j += 1
+
 print(numbers)
 print(numbers[2:5])
 print(numbers[8:])
@@ -79,4 +89,15 @@ numbers.append(17)
 numbers.append(18)
 print(numbers)
 numbers.extend([19, 20, 21])
+print(numbers)
+numbers.append("number1")
+numbers.append("number2")
+print(numbers)
+numbers.remove("number2")
+print(numbers)
+numbers.pop(len(numbers) - 1)
+print(numbers)
+numbers.pop()
+print(numbers)
+numbers.clear()
 print(numbers)
