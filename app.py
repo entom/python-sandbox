@@ -139,3 +139,15 @@ print('itemsTuple', type(itemsTuple), itemsTuple)
 print('items from tuple: ', item1, item2, item3, item4)
 (itemA, *itemB) = itemsTuple
 print('items from tuple: ', itemA, itemB)
+
+setOfColors = {'yellow', 'orange', 'red'}
+print('set-of-colors', type(setOfColors), setOfColors)
+for x in setOfColors:
+    print('item from set of colors: ' + x)
+setOfColors.add('purple')
+print('set-of-colors', setOfColors)
+setOfColors.discard('orange')
+print('set-of-colors', setOfColors)
+setOfColorsLight = {'light1', 'light2', 'light3'}
+setOfColors.update(setOfColorsLight)
+print('set-of-colors', setOfColors)
