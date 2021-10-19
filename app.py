@@ -34,8 +34,17 @@ print("listing, index 2 is: " + listing[2])
 
 user = {"name": "Tom", "age": 40}
 
+print("user type is", type(user))
+print("user keys:", user.keys())
 print("user name: " + user.get("name"))
 print("user age: " + str(user.get("age")))
+user["age"] = 50
+print("user age: " + str(user.get("age")))
+print("user:", user)
+user['zip'] = 44300
+print("user:", user)
+user.update({"age": 60})
+print("user:", user)
 
 print("random from 1 to 100 is: " + str(random.randrange(1, 100)))
 randomString = "random from 1 to 100 is: {}, {}, {}"
