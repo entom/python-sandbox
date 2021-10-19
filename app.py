@@ -179,3 +179,34 @@ def show_dictionary_keys(show_values=False, **user_dictionary):
 
 show_dictionary_keys(age=30, name="Tom")
 show_dictionary_keys(True, age=30, name="Tom", zip=44300)
+
+
+class User:
+    def __init__(self, name) -> None:
+        super().__init__()
+        self.name = name
+
+    def printName(self):
+        print('user-print-name', self.name)
+
+
+userObject = User("Fox")
+print('user_object', type(userObject), userObject, userObject.name)
+userObject.name = "Johny"
+print('user_object', type(userObject), userObject, userObject.name)
+userObject.printName()
+
+
+class Employee(User):
+    def __init__(self, name, role) -> None:
+        super().__init__(name)
+        self.role = role
+
+    def showRole(self):
+        print("(method) employee role is: ", self.role)
+
+
+newEmployee = Employee("Andy", "administrator")
+newEmployee.printName()
+print("employee role is: ", newEmployee.role)
+newEmployee.showRole()
