@@ -1,3 +1,5 @@
+import random
+
 def myFunc(name):
     print("Hello!" + name + "!")
 
@@ -30,3 +32,5 @@ user = {"name": "Tom", "age": 40}
 
 print("user name: " + user.get("name"))
 print("user age: " + str(user.get("age")))
+
+print("random from 1 to 100 is: " + str(random.randrange(1, 100)))
