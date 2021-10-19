@@ -1,7 +1,7 @@
 import random
 
 
-def myFunc(name):
+def my_func(name):
     print("Hello!" + name + "!")
 
 
@@ -16,9 +16,9 @@ print("Array length: " + str(arrLength))
 if 5 > 1:
     print('5 > 1 - ok')
 
-myFunc("Tom")
-myFunc("Carl")
-myFunc("John")
+my_func("Tom")
+my_func("Carl")
+my_func("John")
 
 print(type(5.1))
 print(type(5))
@@ -160,3 +160,22 @@ print('set-of-colors', setOfColors)
 setOfColorsLight = {'light1', 'light2', 'light3'}
 setOfColors.update(setOfColorsLight)
 print('set-of-colors', setOfColors)
+
+
+def render_number(*params):
+    for x in range(len(params)):
+        print('render_numbers, index: ', x, ', value: ', params[x])
+
+
+render_number(1, 3, 5, 7, 9)
+render_number(2, 4, 6, 8)
+
+
+def show_dictionary_keys(show_values=False, **user_dictionary):
+    print('show_dictionary_keys', user_dictionary.keys())
+    if show_values:
+        print('show_dictionary_keys, values: ', user_dictionary.values())
+
+
+show_dictionary_keys(age=30, name="Tom")
+show_dictionary_keys(True, age=30, name="Tom", zip=44300)
