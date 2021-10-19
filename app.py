@@ -34,3 +34,23 @@ print("user name: " + user.get("name"))
 print("user age: " + str(user.get("age")))
 
 print("random from 1 to 100 is: " + str(random.randrange(1, 100)))
+
+print('''
+multiline
+text
+example
+''')
+
+stringExample = "example string"
+print(stringExample[0])
+if ("ex" in stringExample):
+    print("'ex' is in stringExample value")
+if ("ex string" in stringExample):
+    print("'ex string' is in stringExample value")
+if ("ex string" not in stringExample):
+    print("'ex string' is not in stringExample value")
+
+print("part of string 2-5: " + stringExample[2:5])
+print("part of string from start: " + stringExample[:5])
+print("part of string from end: " + stringExample[5:])
+print("replace example: " + stringExample.replace("example", "Hello"))
