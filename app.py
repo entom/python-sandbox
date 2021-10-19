@@ -21,8 +21,10 @@ myFunc("John")
 print(type(5.1))
 print(type(5))
 print(type("5"))
+print(5>2)
 
 listing = ["apple", "banana", "cherry"]
+print(listing)
 print("listing size is " + str(len(listing)))
 print("listing, index 0 is: " + listing[0])
 print("listing, index 1 is: " + listing[1])
@@ -34,6 +36,8 @@ print("user name: " + user.get("name"))
 print("user age: " + str(user.get("age")))
 
 print("random from 1 to 100 is: " + str(random.randrange(1, 100)))
+randomString = "random from 1 to 100 is: {}, {}, {}"
+print(randomString.format(random.randrange(1, 100), random.randrange(1, 100), random.randrange(1, 100)))
 
 print('''
 multiline
@@ -54,3 +58,25 @@ print("part of string 2-5: " + stringExample[2:5])
 print("part of string from start: " + stringExample[:5])
 print("part of string from end: " + stringExample[5:])
 print("replace example: " + stringExample.replace("example", "Hello"))
+
+numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+print(numbers)
+print(numbers[2:5])
+print(numbers[8:])
+print(numbers[:3])
+print("5" in numbers)
+print("15" not in numbers)
+print("19"  in numbers)
+print(numbers)
+numbers[1] = numbers[2]
+print(numbers)
+numbers.insert(13, 13);
+numbers.insert(14, 14);
+numbers.insert(15, 15);
+print(numbers)
+numbers.append(16)
+numbers.append(17)
+numbers.append(18)
+print(numbers)
+numbers.extend([19, 20, 21])
+print(numbers)
