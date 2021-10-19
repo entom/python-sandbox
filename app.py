@@ -124,3 +124,18 @@ colorSum = colorCopy + colors
 print('color-sum', colorSum)
 colorCopy.extend(colorCopySecond)
 print('colorCopy - extend with second list', colorCopy)
+
+itemsTuple = ('square', 'triangle', 'circle')
+print('itemsTuple', itemsTuple)
+print('itemsTuple: index 0 is', itemsTuple[0])
+print('itemsTuple: index 1 is', itemsTuple[1])
+print('itemsTuple: index 2 is', itemsTuple[2])
+
+listItems = list(itemsTuple)
+listItems.append('other')
+itemsTuple = tuple(listItems)
+print('itemsTuple', type(itemsTuple), itemsTuple)
+(item1, item2, item3, item4) = itemsTuple
+print('items from tuple: ', item1, item2, item3, item4)
+(itemA, *itemB) = itemsTuple
+print('items from tuple: ', itemA, itemB)
